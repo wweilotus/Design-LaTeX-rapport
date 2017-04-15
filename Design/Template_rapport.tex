@@ -1,16 +1,19 @@
 \documentclass[a4paper, 11pt,twoside=true]{scrartcl} % Remplace la classe "article", correspond au standard européen.
 \usepackage{Rapport2}
+\usepackage{ctex}
+\usepackage{indentfirst}
+\setCJKmainfont{思源宋体}
 %\usepackage[toc]{multitoc} double table des matières si nécessaire
 \usepackage{lipsum}
 \clearpairofpagestyles
 
 
 %%% Paramètres pour les footers et la page de titre
-\newcommand{\lab}{Laboratoire \# }
-\newcommand{\tit}{Titre du rapport}
-\newcommand{\nom}{Auteur}
-\newcommand{\superv}{Superviseur}
-\newcommand{\depa}{Département}
+\newcommand{\lab}{实验室}
+\newcommand{\tit}{这个是测试}
+\newcommand{\nom}{看看}
+\newcommand{\superv}{导师}
+\newcommand{\depa}{宇航学院}
 
 \input{headtitre.tex}
 
@@ -28,32 +31,19 @@
 
 %%%%%%% Début du document
 
-\section{Introduction}
+\section{迁移}
 \lipsum[7]
-\section{Théorie}
-Soit $f:E\to F$ une fonction dérivable dans $E$. Pour $x\in E$, on a
+\section{KKK}
+Soit $f:E\to F$ une fonction  dans $E$. Pour $x\in E$, on a
 \[
 \int_0^x f'(y)\dd{y}=f(x)-f(0).
 \]
 
 \lipsum[19]
-\section{Méthode expérimentale}
+\section{好多}
 \lipsum[20]
-\section{Résultats et analyse}
+\section{ et analyse}
 \lipsum[30]
 \section{Conclusion}
 \lipsum[20]
-
-
-
-\begin{thebibliography}{widest entry}
-
-
-\end{thebibliography}	
-
-
-
-
-
-
 \end{document}
