@@ -1,4 +1,4 @@
-\documentclass[a4paper, 11pt,twoside=true]{scrartcl} % Remplace la classe "article", correspond au standard européen.
+\documentclass[a4paper, 11pt,twoside=false]{scrartcl} % Remplace la classe "article", correspond au standard européen.
 \usepackage{Rapport2}
 \usepackage{ctex}
 \usepackage{indentfirst}
@@ -9,11 +9,11 @@
 
 
 %%% Paramètres pour les footers et la page de titre
-\newcommand{\lab}{实验室}
-\newcommand{\tit}{这个是测试}
-\newcommand{\nom}{看看}
-\newcommand{\superv}{导师}
-\newcommand{\depa}{宇航学院}
+\newcommand{\lab}{计算书}
+\newcommand{\tit}{电动力绳弹射装置设计}
+\newcommand{\nom}{}
+\newcommand{\superv}{}
+\newcommand{\depa}{}
 
 \input{headtitre.tex}
 
@@ -32,16 +32,66 @@
 %%%%%%% Début du document
 
 \section{迁移}
-\lipsum[7]
-\section{KKK}
+她叫林徽因，出生于杭州，是许多人梦中期待的白莲。她在雨雾之都伦敦，
+发生过一场空前绝后的康桥之恋。她爱过三个男子，爱得清醒，也爱得平静。徐
+志摩为她徜徉在康桥，深情地等待一场旧梦可以归来。梁思成与她携手走过千山
+万水，为完成使命而相约白头。金岳霖为她终身不娶，痴心不改地守候一世。可
+她懂得人生飘忽不定，要学会随遇而安。真正的平静，不是避开车马喧嚣，而是
+在心中修篱种菊。尽管如流往事，每一天都涛声依旧，只要我们消除执念，便可
+寂静安然。愿每个人在纷呈世相中不会迷失荒径，可以端坐磐石上，醉倒落花
+前。如果可以，请让我预支一段如莲的时光，哪怕将来某一天加倍偿还。这个雨
+季会在何时停歇，无从知晓。但我知道，你若安好，便是晴天。
+\section{公式}
 Soit $f:E\to F$ une fonction  dans $E$. Pour $x\in E$, on a
 \[
 \int_0^x f'(y)\dd{y}=f(x)-f(0).
 \]
+Arrays of mathematics are typeset using one of the matrix environments as 
+in
+\[
+\begin{bmatrix}
+1 & x & 0 \\
+0 & 1 & -1
+\end{bmatrix}\begin{bmatrix}
+1  \\
+y  \\
+1
+\end{bmatrix}
+=\begin{bmatrix}
+1+xy  \\
+y-1
+\end{bmatrix}.
+\]
+Case statements use cases:
+\[
+|x|=\begin{cases}
+x, & \text{if }x\geq 0\,,  \\
+-x, & \text{if }x< 0\,.
+\end{cases}
+\]
+Many arrays have lots of dots all over the place as in
+\[
+\begin{matrix}
+-2 & 1 & 0 & 0 & \cdots & 0  \\
+1 & -2 & 1 & 0 & \cdots & 0  \\
+0 & 1 & -2 & 1 & \cdots & 0  \\
+0 & 0 & 1 & -2 & \ddots & \vdots \\
+\vdots & \vdots & \vdots & \ddots & \ddots & 1  \\
+0 & 0 & 0 & \cdots & 1 & -2
+\end{matrix}
+\]
 
-\lipsum[19]
-\section{好多}
-\lipsum[20]
+
+\section{不错的话}
+她叫林徽因，出生于杭州，是许多人梦中期待的白莲。她在雨雾之都伦敦，
+发生过一场空前绝后的康桥之恋。她爱过三个男子，爱得清醒，也爱得平静。徐
+志摩为她徜徉在康桥，深情地等待一场旧梦可以归来。梁思成与她携手走过千山
+万水，为完成使命而相约白头。金岳霖为她终身不娶，痴心不改地守候一世。可
+她懂得人生飘忽不定，要学会随遇而安。真正的平静，不是避开车马喧嚣，而是
+在心中修篱种菊。尽管如流往事，每一天都涛声依旧，只要我们消除执念，便可
+寂静安然。愿每个人在纷呈世相中不会迷失荒径，可以端坐磐石上，醉倒落花
+前。如果可以，请让我预支一段如莲的时光，哪怕将来某一天加倍偿还。这个雨
+季会在何时停歇，无从知晓。但我知道，你若安好，便是晴天。
 \section{ et analyse}
 \lipsum[30]
 \section{Conclusion}
